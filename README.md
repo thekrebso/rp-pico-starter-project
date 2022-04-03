@@ -14,8 +14,6 @@ I'am using non-LTS Ubuntu on WSL2
 
 ## How to set up OpenOCD
 
-
-
 ```sh
 sudo apt install automake autoconf build-essential texinfo libtool libftdi-dev libusb-1.0-0-dev
 
