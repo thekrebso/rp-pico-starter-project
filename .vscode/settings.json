@@ -18,4 +18,6 @@
     },
     "cmake.buildBeforeRun": true,
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    // if you want to explicitly provide path to openocd
+    // "cortex-debug.openocdPath": "<PATH TO OPENOCD EXECUTABLE>"
 }
