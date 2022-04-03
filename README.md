@@ -58,9 +58,7 @@ usbipd wsl attach --busid <busid of the device>
 sudo nano /etc/udev/rules.d/60-picoprobe.rules
 
 sudo service udev restart
-
 sudo udevadm control --reload-rules
-
 sudo udevadm trigger
 
 # list connected devices
