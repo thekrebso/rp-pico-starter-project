@@ -22,7 +22,7 @@ cd openocd/
 
 ./configure --enable-picoprobe --disable-werror
 
-# !! if there are any errors while running make, try to reinstall pkg-config
+# if there are any errors while running make, try to reinstall pkg-config
 # sudo apt reinstall pkg-config
 make
 
@@ -30,7 +30,7 @@ make
 sudo make install
 ```
 
-I assume you have built picoprobe and uploaded to your Pico _(Check useful sites at the bottom)_
+I assume you have already built picoprobe and uploaded to your Pico _(Check useful sites at the bottom)_
 
 ```sh
 ```
@@ -38,4 +38,6 @@ I assume you have built picoprobe and uploaded to your Pico _(Check useful sites
 -----
 Useful sites:
 
+- [Getting Started With Pico](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf)
+- [Raspberry Pi Pico C/C++ Sdk](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf)
 - [Digi-Key's "Raspberry Pi Pico and RP2040 - C/C++ Part 2: Debugging with VS Code"](https://www.digikey.be/en/maker/projects/raspberry-pi-pico-and-rp2040-cc-part-2-debugging-with-vs-code/470abc7efb07432b82c95f6f67f184c0)
