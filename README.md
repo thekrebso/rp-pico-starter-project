@@ -2,6 +2,7 @@
 
 ## VS Code Extensions required
 
+- Microsoft's [C/C++ Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
 - Microsoft's [CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
 - marus25's [Cortex-Debug](https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug)
 
