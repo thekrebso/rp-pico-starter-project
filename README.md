@@ -1,13 +1,9 @@
 # RP-Pico-Starter-Project
 
-&nbsp;
-
 ## VS Code Extensions required
 
 - Microsoft's [CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
 - marus25's [Cortex-Debug](https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug)
-
-&nbsp;
 
 ## OpenOCD & Picoprobe
 
