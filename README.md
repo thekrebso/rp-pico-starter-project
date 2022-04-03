@@ -1,5 +1,7 @@
 # RP-Pico-Starter-Project
 
+&nbsp;
+
 ## VS Code Extensions required
 
 - Microsoft's [CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
