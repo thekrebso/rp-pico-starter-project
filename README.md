@@ -22,7 +22,7 @@ sudo apt install automake autoconf build-essential texinfo libtool libftdi-dev l
 git clone https://github.com/raspberrypi/openocd.git --branch picoprobe --depth=1 --no-single-branch
 cd openocd/
 
-# sometimes you need to run these multuple times to finally work
+# sometimes you need to run these multiple times to finally work
 ./bootstrap
 ./configure --enable-picoprobe --disable-werror
 
