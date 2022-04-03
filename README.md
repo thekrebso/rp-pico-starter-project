@@ -20,11 +20,10 @@ I'am using non-LTS Ubuntu on WSL2
 sudo apt install automake autoconf build-essential texinfo libtool libftdi-dev libusb-1.0-0-dev
 
 git clone https://github.com/raspberrypi/openocd.git --branch picoprobe --depth=1 --no-single-branch
-
 cd openocd/
 
+# sometimes you need to run these multuple times to finally work
 ./bootstrap
-
 ./configure --enable-picoprobe --disable-werror
 
 # if there are any errors while running make, try to reinstall pkg-config
