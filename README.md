@@ -12,28 +12,6 @@ I'am using non-LTS Ubuntu on WSL2
 
 &nbsp;
 
-## How to set up OpenOCD
-
-```sh
-sudo apt install automake autoconf build-essential texinfo libtool libftdi-dev libusb-1.0-0-dev
-
-git clone https://github.com/raspberrypi/openocd.git --branch picoprobe --depth=1 --no-single-branch
-cd openocd/
-
-# sometimes you need to run these multiple times to finally work
-./bootstrap
-./configure --enable-picoprobe --disable-werror
-
-# if there are any errors while running make, try to reinstall pkg-config
-# sudo apt reinstall pkg-config
-make
-
-# and if you want
-sudo make install
-```
-
-&nbsp;
-
 ## How to attach picoprobe device to linux through WSL2
 
 ### On Windows do
@@ -49,7 +27,9 @@ usbipd wsl attach --busid <busid of the device>
 ### Then on Linux
 
 [For setting up and wiring picoprobe and downloading and installing openocd](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf)
+
 [Might be useful?](https://github.com/dorssel/usbipd-win/wiki/WSL-support)
+
 [Settings for picoprobe to work](https://github.com/raspberrypi/picoprobe/issues/48)
 
 ```sh
