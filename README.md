@@ -41,7 +41,7 @@ usbipd wsl attach --busid <busid of the device>
 $> groups # lists groups
 $> sudo groupadd plugdev
 $> sudo gpasswd -a yourusername plugdev
-$> sudo udevadm control --**reload**
+$> sudo udevadm control --reload
 
 # to reload rules
 $> sudo service udev restart
@@ -55,7 +55,7 @@ $> dmesg | grep tty
 
 &nbsp;
 
-## Useful resources
+## Other Useful resources
 
 - [Raspberry Pi Pico SDK](https://github.com/raspberrypi/pico-sdk)
 - [Raspberry Pi Pico SDK Examples](https://github.com/raspberrypi/pico-examples)
