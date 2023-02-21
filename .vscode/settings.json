@@ -1,7 +1,10 @@
 {
-    // These settings tweaks to the cmake plugin will ensure
-    // that you debug using cortex-debug instead of trying to launch
-    // a Pico binary on the host
+    // clangd use compile_commands.json to find the include path
+    // query driver for compile_commands.json arm-none-eabi-g++
+    "clangd.arguments": [
+        "-compile-commands-dir=build",
+        "-query-driver=/usr/bin/arm-none-eabi-g++",
+    ],
     "cmake.statusbar.advanced": {
         "debug": {
             "visibility": "hidden"
@@ -18,6 +21,4 @@
     },
     "cmake.buildBeforeRun": true,
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
-    // if you want to explicitly provide path to openocd
-    // "cortex-debug.openocdPath": "<PATH TO OPENOCD EXECUTABLE>"
 }
