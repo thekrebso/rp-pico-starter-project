@@ -39,7 +39,7 @@ sudo make install
 ### On Windows do
 
 ```powershell
-winget install --interactive --exact dorssel.usbipd-win
+winget install usbipd
 usbipd wsl list
 
 # this step you will need to do every time you launch wsl
@@ -48,18 +48,29 @@ usbipd wsl attach --busid <busid of the device>
 
 ### Then on Linux
 
-```sh
-# create picoprobe.rules with contents: 
-#  # Raspberry Pi Pico probe
-#  ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="0004", MODE="0666"
-sudo nano /etc/udev/rules.d/60-picoprobe.rules
+[For setting up and wiring picoprobe and downloading and installing openocd](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf)
+[Might be useful?](https://github.com/dorssel/usbipd-win/wiki/WSL-support)
+[Settings for picoprobe to work](https://github.com/raspberrypi/picoprobe/issues/48)
 
-sudo service udev restart
-sudo udevadm control --reload-rules
-sudo udevadm trigger
+```sh
+
+# use "interface/cmsis-dap.cfg" 
+# with "openOCDLaunchCommands": ["adapter speed 5000"]
+
+# to add user to plugdev\
+$> groups # lists groups
+$> sudo groupadd plugdev
+$> sudo gpasswd -a yourusername plugdev
+$> sudo udevadm control --**reload**
+
+# to reload rules
+$> sudo service udev restart
+$> sudo udevadm control --reload-rules
+$> sudo udevadm trigger
 
 # list connected devices
-lsusb
+$> lsusb
+$> dmesg | grep tty
 ```
 
 &nbsp;
